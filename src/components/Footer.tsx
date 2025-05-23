@@ -9,9 +9,9 @@ const Footer = () => {
   };
   
   return (
-    <footer className="bg-neutral-900 text-white py-12">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row justify-between items-center">
+    <footer className="py-12 text-white bg-neutral-900">
+      <div className="container px-4 mx-auto sm:px-6 lg:px-8">
+        <div className="flex flex-col items-center justify-between md:flex-row">
           <div className="mb-6 md:mb-0">
             <a href="#home" className="text-2xl font-bold text-white">
               Portfolio
@@ -21,15 +21,15 @@ const Footer = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 mb-6 md:mb-0">
+          <div className="grid grid-cols-2 gap-8 mb-6 sm:grid-cols-3 md:mb-0">
             <div>
-              <h4 className="text-lg font-semibold text-white mb-4">Navigation</h4>
+              <h4 className="mb-4 text-lg font-semibold text-white">Navigation</h4>
               <ul className="space-y-2">
                 {['home', 'projects', 'about', 'contact'].map((item) => (
                   <li key={item}>
                     <a 
                       href={`#${item}`}
-                      className="text-neutral-400 hover:text-primary-400 transition-colors duration-300 capitalize"
+                      className="capitalize transition-colors duration-300 text-neutral-400 hover:text-primary-400"
                     >
                       {item}
                     </a>
@@ -39,12 +39,12 @@ const Footer = () => {
             </div>
             
             <div>
-              <h4 className="text-lg font-semibold text-white mb-4">Connect</h4>
+              <h4 className="mb-4 text-lg font-semibold text-white">Connect</h4>
               <ul className="space-y-2">
                 {[
-                  { name: 'GitHub', url: 'https://github.com' },
-                  { name: 'LinkedIn', url: 'https://linkedin.com' },
-                  { name: 'Twitter', url: 'https://twitter.com' },
+                  { name: 'GitHub', url: 'https://github.com/Oluwaseyi62' },
+                  { name: 'LinkedIn', url: 'https://www.linkedin.com/in/ayoade-oluwaseyi-045084262/' },
+                  { name: 'Twitter', url: 'https://x.com/Ctrl_Alt_Seyi' },
                   { name: 'Dribbble', url: 'https://dribbble.com' }
                 ].map((social) => (
                   <li key={social.name}>
@@ -52,7 +52,7 @@ const Footer = () => {
                       href={social.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-neutral-400 hover:text-primary-400 transition-colors duration-300"
+                      className="transition-colors duration-300 text-neutral-400 hover:text-primary-400"
                     >
                       {social.name}
                     </a>
@@ -62,25 +62,25 @@ const Footer = () => {
             </div>
             
             <div className="col-span-2 sm:col-span-1">
-              <h4 className="text-lg font-semibold text-white mb-4">Contact</h4>
+              <h4 className="mb-4 text-lg font-semibold text-white">Contact</h4>
               <ul className="space-y-2">
                 <li className="text-neutral-400">
-                  San Francisco, CA
+                  Lagos, Nigeria
                 </li>
                 <li>
                   <a 
-                    href="mailto:hello@example.com" 
-                    className="text-neutral-400 hover:text-primary-400 transition-colors duration-300"
+                    href="mailto:oluwaseyiayoade62@gmail.com" 
+                    className="transition-colors duration-300 text-neutral-400 hover:text-primary-400"
                   >
-                    hello@example.com
+                    oluwaseyiayoade62@gmail.com
                   </a>
                 </li>
                 <li>
                   <a 
-                    href="tel:+1234567890" 
-                    className="text-neutral-400 hover:text-primary-400 transition-colors duration-300"
+                    href="tel:+234 70 465 155 71" 
+                    className="transition-colors duration-300 text-neutral-400 hover:text-primary-400"
                   >
-                    +1 (234) 567-890
+                    +234 70 465 155 71
                   </a>
                 </li>
               </ul>
@@ -89,19 +89,16 @@ const Footer = () => {
           
           <button
             onClick={scrollToTop}
-            className="bg-primary-600 hover:bg-primary-700 text-white p-3 rounded-full transition-colors duration-300"
+            className="p-3 text-white transition-colors duration-300 rounded-full bg-primary-600 hover:bg-primary-700"
             aria-label="Scroll to top"
           >
             <ArrowUp size={20} />
           </button>
         </div>
         
-        <div className="border-t border-neutral-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-neutral-400 mb-4 md:mb-0">
-            © {new Date().getFullYear()} John Doe. All rights reserved.
-          </p>
-          <p className="text-neutral-400">
-            Designed and built with ❤️
+        <div className="flex flex-col items-center justify-between pt-8 mt-12 border-t border-neutral-800 md:flex-row">
+          <p className="mb-4 text-neutral-400 md:mb-0">
+            © {new Date().getFullYear()} Ayoade Oluwaseyi. All rights reserved.
           </p>
         </div>
       </div>

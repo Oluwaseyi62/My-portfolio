@@ -31,7 +31,7 @@ const About = () => {
           <div className="lg:col-span-3 animate-fadeIn animation-delay-200">
             <h3 className="mb-4 text-2xl font-bold text-neutral-900">My Background</h3>
             <p className="mb-6 leading-relaxed text-neutral-700">
-            I'm a frontend developer with over 3 years of experience crafting intuitive and high-performance web interfaces. My journey began with a degree in Computer Science, and since then, I've worked with startups and established companies, refining my skills in building responsive, user-friendly frontend experiences.
+            I'm a frontend developer with over 3 years of experience crafting intuitive and high-performance web interfaces. My journey began as an undergraduate in Computer Science, and since then, I've worked with startups and established companies, refining my skills in building responsive, user-friendly frontend experiences.
             </p>
             <p className="mb-6 leading-relaxed text-neutral-700">
             I specialize in translating complex ideas into clean, maintainable code and engaging user interfaces. My focus is on creating visually appealing, accessible, and performant applications that put the user first.

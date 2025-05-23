@@ -27,30 +27,30 @@ export const projects: Project[] = [
     image: "/images/Dole4.jpg",
     category: "web",
     technologies: ["React", "D3.js", "Firebase", "Material-UI"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/example"
+    liveUrl: "https://musical-alpaca-502a93.netlify.app/",
+    githubUrl: "https://github.com/Oluwaseyi62/Dole-revamp.git"
   },
   {
     id: 3,
-    title: "Task Management App",
-    description: "A collaborative task management tool with drag-and-drop functionality, team assignments, and progress tracking.",
-    image: "https://images.pexels.com/photos/5926398/pexels-photo-5926398.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    category: "mobile",
-    technologies: ["React Native", "Redux", "Firebase", "Styled Components"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/example"
+    title: "An e-commerce website for sustainable shopping",
+    description: "ECOBUY is a forward-thinking marketplace dedicated to making eco-friendly living accessible and affordable for everyone.",
+    image: "/images/Ecobuy.jpg",
+    category: "web",
+    technologies: ["React", "Typescript", "MongoDB", "Tailwind CSS"],
+    liveUrl: "https://ecobuyy.netlify.app/",
+    githubUrl: ""
   },
   {
     id: 4,
     title: "Weather Forecast",
-    description: "Minimalist weather application providing current conditions and 7-day forecasts with beautiful UI.",
+    description: "Minimalist weather application providing current conditions and 7-day forecasts with beautiful UI...Comimg up soon",
     image: "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     category: "web",
     technologies: ["JavaScript", "OpenWeather API", "HTML5", "CSS3"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/example"
+    liveUrl: "",
+    githubUrl: ""
   },
-  {
+  /*{
     id: 5,
     title: "Fitness Tracker",
     description: "Full-featured fitness application with workout tracking, progress visualization, and social sharing.",
@@ -60,6 +60,7 @@ export const projects: Project[] = [
     liveUrl: "https://example.com",
     githubUrl: "https://github.com/example"
   },
+  */
   {
     id: 6,
     title: "Portfolio Design System",
@@ -67,7 +68,7 @@ export const projects: Project[] = [
     image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     category: "ui/ux",
     technologies: ["Figma", "Storybook", "React", "TypeScript"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/example"
+    liveUrl: "",
+    githubUrl: ""
   }
 ];

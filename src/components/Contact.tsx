@@ -39,58 +39,58 @@ const Contact = () => {
   
   return (
     <section id="contact" className="py-24 bg-white">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16 animate-fadeIn">
-          <p className="text-primary-600 font-medium mb-3">Get In Touch</p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-neutral-900 mb-4">Contact Me</h2>
-          <p className="max-w-2xl mx-auto text-neutral-700 text-lg">
+      <div className="container px-4 mx-auto sm:px-6 lg:px-8">
+        <div className="mb-16 text-center animate-fadeIn">
+          <p className="mb-3 font-medium text-primary-600">Get In Touch</p>
+          <h2 className="mb-4 text-3xl font-bold sm:text-4xl text-neutral-900">Contact Me</h2>
+          <p className="max-w-2xl mx-auto text-lg text-neutral-700">
             Have a project in mind or want to collaborate? Feel free to reach out!
           </p>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-5">
           <div className="lg:col-span-2 animate-fadeIn">
-            <div className="bg-neutral-50 p-8 rounded-xl shadow-md h-full">
-              <h3 className="text-2xl font-bold text-neutral-900 mb-6">Contact Information</h3>
+            <div className="h-full p-8 shadow-md bg-neutral-50 rounded-xl">
+              <h3 className="mb-6 text-2xl font-bold text-neutral-900">Contact Information</h3>
               
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="bg-primary-100 p-3 rounded-lg text-primary-600">
+                  <div className="p-3 rounded-lg bg-primary-100 text-primary-600">
                     <MapPin size={24} />
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold text-neutral-900 mb-1">Location</h4>
-                    <p className="text-neutral-700">San Francisco, CA</p>
+                    <h4 className="mb-1 text-lg font-semibold text-neutral-900">Location</h4>
+                    <p className="text-neutral-700">Lagos, Nigeria</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start gap-4">
-                  <div className="bg-primary-100 p-3 rounded-lg text-primary-600">
+                  <div className="p-3 rounded-lg bg-primary-100 text-primary-600">
                     <Mail size={24} />
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold text-neutral-900 mb-1">Email</h4>
-                    <a href="mailto:hello@example.com" className="text-neutral-700 hover:text-primary-600 transition-colors">
-                      hello@example.com
+                    <h4 className="mb-1 text-lg font-semibold text-neutral-900">Email</h4>
+                    <a href="mailto:oluwaseyiayoade62@gmail.com" className="transition-colors text-neutral-700 hover:text-primary-600">
+                      oluwaseyiayoade62@gmail.com
                     </a>
                   </div>
                 </div>
                 
                 <div className="flex items-start gap-4">
-                  <div className="bg-primary-100 p-3 rounded-lg text-primary-600">
+                  <div className="p-3 rounded-lg bg-primary-100 text-primary-600">
                     <Phone size={24} />
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold text-neutral-900 mb-1">Phone</h4>
-                    <a href="tel:+1234567890" className="text-neutral-700 hover:text-primary-600 transition-colors">
-                      +1 (234) 567-890
+                    <h4 className="mb-1 text-lg font-semibold text-neutral-900">Phone</h4>
+                    <a href="tel:+234 70 465 155 71" className="transition-colors text-neutral-700 hover:text-primary-600">
+                      +234 70 465 155 71
                     </a>
                   </div>
                 </div>
               </div>
               
               <div className="mt-12">
-                <h4 className="text-lg font-semibold text-neutral-900 mb-4">Follow Me</h4>
+                <h4 className="mb-4 text-lg font-semibold text-neutral-900">Follow Me</h4>
                 <div className="flex gap-4">
                   {['twitter', 'linkedin', 'github', 'dribbble'].map((social) => (
                     <a 
@@ -98,7 +98,7 @@ const Contact = () => {
                       href={`https://${social}.com`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="bg-white w-10 h-10 rounded-full flex items-center justify-center shadow-sm hover:shadow-md transition-all duration-300 hover:bg-primary-50 text-neutral-700 hover:text-primary-600"
+                      className="flex items-center justify-center w-10 h-10 transition-all duration-300 bg-white rounded-full shadow-sm hover:shadow-md hover:bg-primary-50 text-neutral-700 hover:text-primary-600"
                       aria-label={`Follow on ${social}`}
                     >
                       <i className={`fab fa-${social}`}></i>
@@ -110,8 +110,8 @@ const Contact = () => {
           </div>
           
           <div className="lg:col-span-3 animate-fadeIn animation-delay-200">
-            <div className="bg-white p-8 rounded-xl shadow-md">
-              <h3 className="text-2xl font-bold text-neutral-900 mb-6">Send Me a Message</h3>
+            <div className="p-8 bg-white shadow-md rounded-xl">
+              <h3 className="mb-6 text-2xl font-bold text-neutral-900">Send Me a Message</h3>
               
               {submitMessage.text && (
                 <div 
@@ -124,9 +124,9 @@ const Contact = () => {
               )}
               
               <form onSubmit={handleSubmit}>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div className="grid grid-cols-1 gap-6 mb-6 md:grid-cols-2">
                   <div>
-                    <label htmlFor="name" className="block text-neutral-700 font-medium mb-2">
+                    <label htmlFor="name" className="block mb-2 font-medium text-neutral-700">
                       Your Name
                     </label>
                     <input
@@ -136,12 +136,12 @@ const Contact = () => {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300"
+                      className="w-full px-4 py-3 transition-all duration-300 border rounded-lg border-neutral-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                       placeholder="John Doe"
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-neutral-700 font-medium mb-2">
+                    <label htmlFor="email" className="block mb-2 font-medium text-neutral-700">
                       Your Email
                     </label>
                     <input
@@ -151,14 +151,14 @@ const Contact = () => {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300"
-                      placeholder="john@example.com"
+                      className="w-full px-4 py-3 transition-all duration-300 border rounded-lg border-neutral-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                      placeholder="john@gmail.com"
                     />
                   </div>
                 </div>
                 
                 <div className="mb-6">
-                  <label htmlFor="subject" className="block text-neutral-700 font-medium mb-2">
+                  <label htmlFor="subject" className="block mb-2 font-medium text-neutral-700">
                     Subject
                   </label>
                   <input
@@ -168,13 +168,13 @@ const Contact = () => {
                     value={formData.subject}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300"
+                    className="w-full px-4 py-3 transition-all duration-300 border rounded-lg border-neutral-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                     placeholder="Project Inquiry"
                   />
                 </div>
                 
                 <div className="mb-6">
-                  <label htmlFor="message" className="block text-neutral-700 font-medium mb-2">
+                  <label htmlFor="message" className="block mb-2 font-medium text-neutral-700">
                     Your Message
                   </label>
                   <textarea
@@ -184,7 +184,7 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     rows={5}
-                    className="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300 resize-none"
+                    className="w-full px-4 py-3 transition-all duration-300 border rounded-lg resize-none border-neutral-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                     placeholder="Hello, I'd like to talk about..."
                   ></textarea>
                 </div>
@@ -192,11 +192,11 @@ const Contact = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="px-6 py-3 bg-primary-600 text-white rounded-lg font-medium flex items-center justify-center gap-2 hover:bg-primary-700 transition-colors duration-300 disabled:opacity-70 disabled:cursor-not-allowed"
+                  className="flex items-center justify-center gap-2 px-6 py-3 font-medium text-white transition-colors duration-300 rounded-lg bg-primary-600 hover:bg-primary-700 disabled:opacity-70 disabled:cursor-not-allowed"
                 >
                   {isSubmitting ? (
                     <>
-                      <span className="animate-spin rounded-full h-4 w-4 border-b-2 border-white"></span>
+                      <span className="w-4 h-4 border-b-2 border-white rounded-full animate-spin"></span>
                       <span>Sending...</span>
                     </>
                   ) : (

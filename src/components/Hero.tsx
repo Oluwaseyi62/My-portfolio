@@ -1,6 +1,41 @@
 import { Github as GitHub, Linkedin, Mail } from 'lucide-react';
+import { useState, useEffect } from 'react';
 
 const Hero = () => {
+  const [text, setText] = useState('');
+  const fullText = 'Oluwaseyi';
+  const [isDeleting, setIsDeleting] = useState(false);
+  
+  useEffect(() => {
+    const typingSpeed = 150;
+    const deletingSpeed = 100;
+    const pauseDuration = 2000;
+    
+    const handleTyping = () => {
+      if (!isDeleting) {
+        if (text.length < fullText.length) {
+          setText(fullText.slice(0, text.length + 1));
+        } else {
+          setTimeout(() => setIsDeleting(true), pauseDuration);
+        }
+      } else {
+        if (text.length > 0) {
+          setText(fullText.slice(0, text.length - 1));
+        } else {
+          setIsDeleting(false);
+        }
+      }
+    };
+    
+    const timer = setTimeout(
+      handleTyping,
+      isDeleting ? deletingSpeed : typingSpeed
+    );
+    
+    return () => clearTimeout(timer);
+  }, [text, isDeleting]);
+
+ 
   return (
     <section 
       id="home" 
@@ -11,7 +46,7 @@ const Hero = () => {
           <div className="order-2 lg:w-1/2 lg:order-1 animate-fadeIn">
             <p className="mb-4 font-medium tracking-wide text-primary-600">Hello, I'm</p>
             <h1 className="mb-6 text-4xl font-bold leading-tight sm:text-5xl md:text-6xl text-neutral-900">
-              Ayoade <span className="text-primary-600">Oluwaseyi</span>
+              Ayoade <span className="text-primary-600 typing-text">{text}</span>
             </h1>
             <p className="mb-8 text-xl leading-relaxed sm:text-2xl text-neutral-700">
             Frontend Developer focused on creating elegant, responsive, and intuitive digital interfaces.
@@ -34,7 +69,7 @@ const Hero = () => {
             
             <div className="flex items-center gap-6">
               <a 
-                href="https://github.com" 
+                href="https://github.com/Oluwaseyi62" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="transition-colors duration-300 text-neutral-700 hover:text-primary-600"
@@ -43,7 +78,7 @@ const Hero = () => {
                 <GitHub size={24} />
               </a>
               <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/in/ayoade-oluwaseyi-045084262/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="transition-colors duration-300 text-neutral-700 hover:text-primary-600"
@@ -52,7 +87,7 @@ const Hero = () => {
                 <Linkedin size={24} />
               </a>
               <a 
-                href="mailto:hello@example.com"
+                href="mailto:oluwaseyiayoade62@gmail.com"
                 className="transition-colors duration-300 text-neutral-700 hover:text-primary-600"
                 aria-label="Email"
               >
@@ -82,5 +117,6 @@ const Hero = () => {
     </section>
   );
 };
+
 
 export default Hero;
