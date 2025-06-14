@@ -47,12 +47,12 @@ export const projects: Project[] = [
     image: "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     category: "web",
     technologies: ["JavaScript", "OpenWeather API", "HTML5", "CSS3"],
-    liveUrl: "",
+    liveUrl: "https://unique-shortbread-5cb5e2.netlify.app/",
     githubUrl: ""
   },
-  /*{
+  {
     id: 5,
-    title: "Fitness Tracker",
+    title: "Mason custard",
     description: "Full-featured fitness application with workout tracking, progress visualization, and social sharing.",
     image: "https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     category: "mobile",
@@ -60,7 +60,7 @@ export const projects: Project[] = [
     liveUrl: "https://example.com",
     githubUrl: "https://github.com/example"
   },
-  */
+  
   {
     id: 6,
     title: "Portfolio Design System",
