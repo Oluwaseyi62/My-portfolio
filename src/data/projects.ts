@@ -43,7 +43,7 @@ export const projects: Project[] = [
   {
     id: 4,
     title: "Weather Forecast",
-    description: "Minimalist weather application providing current conditions and 7-day forecasts with beautiful UI...Comimg up soon",
+    description: "Minimalist weather application providing current conditions and 7-day forecasts with beautiful UI.",
     image: "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     category: "web",
     technologies: ["JavaScript", "OpenWeather API", "HTML5", "CSS3"],
