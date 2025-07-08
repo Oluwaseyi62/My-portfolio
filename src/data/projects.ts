@@ -56,7 +56,7 @@ export const projects: Project[] = [
     description: "Full-featured custard website with featuring product filtering, cart functionality, and secure checkout.",
     image: "/images/Custard.jpg",
     category: "mobile",
-    technologies: ["Flutter", "Firebase", "Provider", "Health API"],
+    technologies: ["React", "Firebase", "Provider", "Tailwind CSS"],  
     liveUrl: "https://resonant-tarsier-6a651d.netlify.app/",
     githubUrl: ""
   },
