@@ -53,22 +53,22 @@ export const projects: Project[] = [
   {
     id: 5,
     title: "Mason custard",
-    description: "Full-featured fitness application with workout tracking, progress visualization, and social sharing.",
-    image: "https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    description: "Full-featured custard website with featuring product filtering, cart functionality, and secure checkout.",
+    image: "/images/Custard.jpg",
     category: "mobile",
     technologies: ["Flutter", "Firebase", "Provider", "Health API"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/example"
+    liveUrl: "https://resonant-tarsier-6a651d.netlify.app/",
+    githubUrl: ""
   },
   
   {
     id: 6,
-    title: "Portfolio Design System",
-    description: "A comprehensive design system with reusable components, documentation, and implementation guidelines.",
-    image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    category: "ui/ux",
-    technologies: ["Figma", "Storybook", "React", "TypeScript"],
-    liveUrl: "",
+    title: "DevLink",
+    description: "Create a stunning link-in-bio profile that showcases your coding journey. Connect GitHub, display live stats, and share your developer story in one place.",
+    image: "/images/DevLink.jpg",
+    category: "Web",
+    technologies: ["Figma", "React", "TypeScript"],
+    liveUrl: "https://gilded-cassata-e7595e.netlify.app/",
     githubUrl: ""
   }
 ];
