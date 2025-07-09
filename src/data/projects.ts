@@ -65,7 +65,7 @@ export const projects: Project[] = [
     id: 6,
     title: "DevLink",
     description: "Create a stunning link-in-bio profile that showcases your coding journey. Connect GitHub, display live stats, and share your developer story in one place.",
-    image: "/images/DevLink.jpg",
+    image: "/images/DevLink1.png",
     category: "Web",
     technologies: ["Figma", "React", "TypeScript"],
     liveUrl: "https://gilded-cassata-e7595e.netlify.app/",
